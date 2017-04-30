@@ -143,5 +143,7 @@ namespace _1453002_1453005_1453006_FinalProject
                 frm.Dock = DockStyle.Fill;
             }
         }
+
+       
     }
 }

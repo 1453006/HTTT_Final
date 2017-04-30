@@ -90,6 +90,7 @@
             this.btn_nhapkho.TabIndex = 1;
             this.btn_nhapkho.Text = "Nhập kho";
             this.btn_nhapkho.UseVisualStyleBackColor = true;
+            this.btn_nhapkho.Click += new System.EventHandler(this.btn_nhapkho_Click);
             // 
             // btn_xuatkho
             // 
@@ -99,6 +100,7 @@
             this.btn_xuatkho.TabIndex = 2;
             this.btn_xuatkho.Text = "Xuất kho";
             this.btn_xuatkho.UseVisualStyleBackColor = true;
+            this.btn_xuatkho.Click += new System.EventHandler(this.btn_xuatkho_Click);
             // 
             // btn_tonkho
             // 
@@ -108,6 +110,7 @@
             this.btn_tonkho.TabIndex = 3;
             this.btn_tonkho.Text = "Tồn kho";
             this.btn_tonkho.UseVisualStyleBackColor = true;
+            this.btn_tonkho.Click += new System.EventHandler(this.btn_tonkho_Click);
             // 
             // groupBox1
             // 
@@ -129,6 +132,7 @@
             this.btn_nhakho.TabIndex = 1;
             this.btn_nhakho.Text = "Nhà kho";
             this.btn_nhakho.UseVisualStyleBackColor = true;
+            this.btn_nhakho.Click += new System.EventHandler(this.btn_nhakho_Click);
             // 
             // btn_loaisp
             // 
@@ -138,6 +142,7 @@
             this.btn_loaisp.TabIndex = 2;
             this.btn_loaisp.Text = "Loại SP";
             this.btn_loaisp.UseVisualStyleBackColor = true;
+            this.btn_loaisp.Click += new System.EventHandler(this.btn_loaisp_Click);
             // 
             // btn_nhacungcap
             // 
@@ -147,6 +152,7 @@
             this.btn_nhacungcap.TabIndex = 3;
             this.btn_nhacungcap.Text = "Nhà cung cấp";
             this.btn_nhacungcap.UseVisualStyleBackColor = true;
+            this.btn_nhacungcap.Click += new System.EventHandler(this.btn_nhacungcap_Click);
             // 
             // tabctl_qlkho
             // 

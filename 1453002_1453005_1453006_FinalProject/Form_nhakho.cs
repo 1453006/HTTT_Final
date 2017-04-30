@@ -12,9 +12,18 @@ namespace _1453002_1453005_1453006_FinalProject
 {
     public partial class Form_nhakho : Form
     {
+        private void LayThongTinKho()
+        {
+            nhakho info = new nhakho();
+            this.dgv_nhakho.DataSource = info.LayThongTinKho();
+
+        }
         public Form_nhakho()
         {
             InitializeComponent();
+            LayThongTinKho();
+
+
         }
     }
 }
