@@ -14,8 +14,8 @@ namespace _1453002_1453005_1453006_FinalProject
     {
         private void LayThongTinKho()
         {
-            nhakho info = new nhakho();
-            this.dgv_nhakho.DataSource = info.LayThongTinKho();
+           
+            this.dgv_nhakho.DataSource = nhakho.LayThongTinKho();
 
         }
         public Form_nhakho()

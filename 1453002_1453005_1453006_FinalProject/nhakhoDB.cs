@@ -7,12 +7,12 @@ using System.Data;
 
 namespace _1453002_1453005_1453006_FinalProject
 {
-    public class nhakhoDB : DataProvider
+    public class nhakhoDB
     {
-        public DataTable LayThongTinKho()
+        public static DataTable LayThongTinKho()
         {
             string q = "select makho,tenkho,mota from KHO";
-            return  query(q);
+            return DataProvider.query(q);
         }
     }
 }

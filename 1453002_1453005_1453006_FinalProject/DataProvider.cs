@@ -8,17 +8,17 @@ using System.Data.SqlClient;
 
 namespace _1453002_1453005_1453006_FinalProject
 {
-   public class DataProvider
+   public static class DataProvider
     {
         public static string connectionstring = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\DB_HUONGRUNG.mdf;Integrated Security=True";
 
 
-        SqlConnection con;
-        DataTable dt;
-        SqlDataAdapter da;
-        SqlCommand cmd;
+        public static SqlConnection con;
+        public static DataTable dt;
+        public static SqlDataAdapter da;
+        public static SqlCommand cmd;
 
-        public SqlConnection open()
+        public static SqlConnection open()
         {
             con = new SqlConnection(connectionstring);
             if (con.State == ConnectionState.Closed) // nwe đag đóng thì mở
@@ -29,7 +29,7 @@ namespace _1453002_1453005_1453006_FinalProject
             return con;
         }
 
-        public SqlConnection close()
+        public static SqlConnection close()
         {
             con = new SqlConnection(connectionstring);
             if (con.State == ConnectionState.Open)
@@ -39,7 +39,7 @@ namespace _1453002_1453005_1453006_FinalProject
             return con;
         }
 
-        public DataTable query(string sql)
+        public static DataTable query(string sql)
         {
             open();
             dt = new DataTable();
@@ -53,10 +53,7 @@ namespace _1453002_1453005_1453006_FinalProject
         }
 
 
-        protected virtual object GetDataFromDataRow(DataTable dt, int i)
-        {
-            return null;
-        }
+     
 
 
     }

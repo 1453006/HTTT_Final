@@ -13,10 +13,10 @@ namespace _1453002_1453005_1453006_FinalProject
         private string tenkho;
         private string mota;
 
-        public DataTable LayThongTinKho()
+        public static DataTable LayThongTinKho()
         {
-            nhakhoDB data = new nhakhoDB();
-            return  data.LayThongTinKho();
+           
+            return  nhakhoDB.LayThongTinKho();
         }
     }
 }
