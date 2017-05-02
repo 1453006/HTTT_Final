@@ -23,7 +23,7 @@ namespace _1453002_1453005_1453006_FinalProject
         }
 
         //purpose: check if clicked tab is opened or not, if is opened --> return true | else return false
-        private bool is_existstab(TabControl tabctl, Form frm)
+        public static bool is_existstab(TabControl tabctl, Form frm)
         {
 
             for (int i = 0; i < tabctl.TabCount; i++)
@@ -64,6 +64,21 @@ namespace _1453002_1453005_1453006_FinalProject
 
         }
 
+        public void insertTab_nhapkho()
+        {
+            tabctl_qlkho.TabPages.Clear();
+            Form_loaisp frm = new Form_loaisp();
+            if (!is_existstab(tabctl_qlkho, frm))
+            {
+                TabPage tpage = new TabPage(Text = frm.Text);
+                this.tabctl_qlkho.TabPages.Add(tpage);
+                frm.TopLevel = false;
+                frm.Parent = tpage;
+
+                frm.Show();
+                frm.Dock = DockStyle.Fill;
+            }
+        }
         private void btn_loaisp_Click(object sender, EventArgs e)
         {
             tabctl_qlkho.TabPages.Clear();
@@ -99,7 +114,7 @@ namespace _1453002_1453005_1453006_FinalProject
         private void btn_nhapkho_Click(object sender, EventArgs e)
         {
             tabctl_qlkho.TabPages.Clear();
-            Form_nhapkho frm = new Form_nhapkho();
+            Form_nhapkho frm = new Form_nhapkho(this.tabctl_qlkho);
             if (!is_existstab(tabctl_qlkho, frm))
             {
                 TabPage tpage = new TabPage(Text = frm.Text);
