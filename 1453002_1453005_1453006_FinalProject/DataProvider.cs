@@ -12,6 +12,19 @@ namespace _1453002_1453005_1453006_FinalProject
     {
         public static string connectionstring = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\DB_HUONGRUNG.mdf;Integrated Security=True";
 
+        public static string RandomString(int Size)
+        {
+            string input = "abcdefghijklmnopqrstuvwxyz0123456789";
+            StringBuilder builder = new StringBuilder();
+            char ch;
+            Random random = new Random();
+            for (int i = 0; i < Size; i++)
+            {
+                ch = input[random.Next(0, input.Length)];
+                builder.Append(ch);
+            }
+            return builder.ToString();
+        }
 
         public static SqlConnection con;
         public static DataTable dt;

@@ -38,13 +38,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btn_search = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgv_phieunhap = new System.Windows.Forms.DataGridView();
             this.maphieunhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ngaynhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tennv = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.thanhtien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nhacungcap = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_phieunhap)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_insert
@@ -136,19 +136,20 @@
             this.btn_search.Text = "Tìm kiếm";
             this.btn_search.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dgv_phieunhap
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgv_phieunhap.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_phieunhap.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.maphieunhap,
             this.ngaynhap,
             this.tennv,
             this.thanhtien,
             this.nhacungcap});
-            this.dataGridView1.Location = new System.Drawing.Point(41, 242);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(571, 150);
-            this.dataGridView1.TabIndex = 10;
+            this.dgv_phieunhap.Location = new System.Drawing.Point(41, 242);
+            this.dgv_phieunhap.Name = "dgv_phieunhap";
+            this.dgv_phieunhap.Size = new System.Drawing.Size(571, 150);
+            this.dgv_phieunhap.TabIndex = 10;
+            this.dgv_phieunhap.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_phieunhap_CellDoubleClick);
             // 
             // maphieunhap
             // 
@@ -185,7 +186,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(752, 497);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgv_phieunhap);
             this.Controls.Add(this.btn_search);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -197,7 +198,7 @@
             this.Controls.Add(this.edt_maphieunhap);
             this.Controls.Add(this.btn_insert);
             this.Name = "Form_nhapkho";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_phieunhap)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -215,7 +216,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btn_search;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgv_phieunhap;
         private System.Windows.Forms.DataGridViewTextBoxColumn maphieunhap;
         private System.Windows.Forms.DataGridViewTextBoxColumn ngaynhap;
         private System.Windows.Forms.DataGridViewTextBoxColumn tennv;
